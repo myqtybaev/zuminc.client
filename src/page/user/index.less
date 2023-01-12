@@ -1,0 +1,52 @@
+@import url("../../index.less");
+@media (min-width: 720px) {
+  .user-layout {
+    .paddingLayout();
+  }
+}
+@media (max-width: 720px) {
+  .user-layout {
+    padding: 10px;
+  }
+}
+.user-layout {
+  nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        a {
+          color: #000;
+          font-size: 18px;
+          border-left: 2px solid #fff;
+          transition: 0.5s;
+          .icon {
+            margin-right: 20px;
+            margin-left: 15px;
+          }
+          &:hover {
+            color: @color-primary;
+            border-color: @color-primary;
+            transition: 0.5s;
+          }
+          &.active {
+            color: @color-primary;
+            border-color: @color-primary;
+          }
+        }
+      }
+    }
+  }
+  .page-order {
+    .item {
+      border-bottom: 1px solid;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .color-primary {
+      color: @color-primary;
+    }
+  }
+}

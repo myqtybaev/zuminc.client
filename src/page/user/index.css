@@ -1,0 +1,71 @@
+.paddingLayout {
+  padding-left: 105px;
+  padding-right: 105px;
+}
+.home {
+  margin-top: 20px;
+}
+.home .catalog button {
+  background-color: #f2f2f2;
+  color: #000;
+  border-color: #f2f2f2;
+}
+.home .catalog button:hover {
+  border-color: #e7267a;
+}
+.home .catalog button.active {
+  color: #e7267a;
+  outline-color: #e7267a !important;
+  border-color: #e7267a;
+}
+@media (max-width: 720px) {
+  .home {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+}
+@media (min-width: 720px) {
+  .user-layout {
+    padding-left: 105px;
+    padding-right: 105px;
+  }
+}
+@media (max-width: 720px) {
+  .user-layout {
+    padding: 10px;
+  }
+}
+.user-layout nav ul {
+  margin: 0;
+  padding: 0;
+}
+.user-layout nav ul li {
+  list-style: none;
+}
+.user-layout nav ul li a {
+  color: #000;
+  font-size: 18px;
+  border-left: 2px solid #fff;
+  transition: 0.5s;
+}
+.user-layout nav ul li a .icon {
+  margin-right: 20px;
+  margin-left: 15px;
+}
+.user-layout nav ul li a:hover {
+  color: #e7267a;
+  border-color: #e7267a;
+  transition: 0.5s;
+}
+.user-layout nav ul li a.active {
+  color: #e7267a;
+  border-color: #e7267a;
+}
+.user-layout .page-order .item {
+  border-bottom: 1px solid;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.user-layout .page-order .color-primary {
+  color: #e7267a;
+}

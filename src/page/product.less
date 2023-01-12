@@ -1,0 +1,109 @@
+@import url("../index.less");
+@media (min-width: 720px) {
+  .product-page {
+    .paddingLayout();
+  }
+  .category-page {
+    .paddingLayout();
+  }
+  .order-page {
+    .paddingLayout();
+  }
+}
+@media (max-width: 720px) {
+  .order-page {
+    input {
+      width: 100%;
+    }
+  }
+  .product-page {
+    padding: 10px;
+    .slider-mobile {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      .image {
+        max-height: 104px;
+        overflow: hidden;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.product-page {
+  margin-top: 30px;
+  .image-sing {
+    width: 400px;
+    max-height: 400px;
+  }
+  .slid-image {
+    font-size: 34px;
+    svg {
+      font-size: 19px;
+    }
+  }
+  .image {
+    img {
+      width: 104px;
+      height: 104px;
+      transition: 0.5s;
+    }
+    .active {
+      border: 3px solid @color-primary;
+      transition: 0.5s;
+    }
+  }
+  .attribute {
+    width: 100%;
+    // background-color: red;
+  }
+  .que {
+    display: flex;
+    width: max-content;
+    button {
+      border: none;
+      background-color: #fff;
+      box-shadow: none;
+      outline: none;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      box-shadow: @color-primary;
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover {
+        transition: 0.5s;
+        border-color: @color-primary;
+        box-shadow: 0 0 10px @color-primary;
+      }
+      &:first-child {
+        border-left: 1px solid;
+      }
+      &:last-child {
+        border-right: 1px solid;
+      }
+      &:first-child:hover {
+        border-left: 1px solid @color-primary;
+      }
+      &:last-child:hover {
+        border-right: 1px solid @color-primary;
+      }
+    }
+    input {
+      border: none;
+      text-align: center;
+      width: 46px;
+      outline: none;
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+      &::-webkit-outer-spin-button {
+        margin: 0;
+        display: none;
+      }
+      &::-webkit-inner-spin-button {
+        display: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+      }
+    }
+  }
+}

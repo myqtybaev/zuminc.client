@@ -1,0 +1,54 @@
+.basket {
+  .ant-drawer-header.ant-drawer-header-close-only {
+    display: none;
+  }
+  .back {
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .basket-item {
+    display: flex;
+    position: relative !important;
+
+    padding-bottom: 10px;
+
+    .destroy {
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      cursor: pointer;
+    }
+    .que {
+      input {
+        width: 32px;
+        border: none;
+        border-right: 1px solid;
+        outline: none;
+        &::-webkit-outer-spin-button {
+          margin: 0;
+          display: none;
+        }
+        &::-webkit-inner-spin-button {
+          display: none;
+          margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+        }
+      }
+    }
+    .prise {
+      display: block;
+      margin-right: auto;
+      text-align: end;
+      width: 100%;
+    }
+  }
+  .promocode {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #000000;
+  }
+  .sum {
+    margin-top: 10px;
+  }
+}
